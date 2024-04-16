@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Ito ay maaring maging kritikal na sanaysay, lab report, konseptong papel o term paper? <input type="text" id="Q1"></label>
+    <button onclick="checkAnswer()">Check Answer</button>
+    <p id="result"></p>
+
+    <script>
+        function checkAnswer() {
+            var userInput = document.getElementById('Q1').value.trim().toLowerCase();
+            var correctAnswer = "akademik";
+            var resultDisplay = document.getElementById('result');
+
+            if (userInput === correctAnswer) {
+                resultDisplay.textContent = "Correct!";
+            } else {
+                resultDisplay.textContent = "Incorrect. Try again!";
+            }
+        }
+    </script>
+</body>
+</html>
+
